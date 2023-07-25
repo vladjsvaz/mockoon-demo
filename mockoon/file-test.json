@@ -27,13 +27,17 @@
       ]
     },
     {
-      "uuid": "e3211a70-a570-44a0-bf64-b1093594c944",
-      "name": "Todos demo",
-      "collapsed": true,
+      "uuid": "af7e6b10-c92c-4ea4-af41-c078cf3b3cdd",
+      "name": "Todo list demo",
+      "collapsed": false,
       "children": [
         {
           "type": "route",
-          "uuid": "fd33ab37-d860-4a45-b39e-25f112b63872"
+          "uuid": "0ad17fb1-bbf2-4154-a383-b3207f2b5829"
+        },
+        {
+          "type": "route",
+          "uuid": "25df3d67-3ed8-450a-a646-3109906fe43d"
         }
       ]
     }
@@ -194,34 +198,6 @@
       "responseMode": null
     },
     {
-      "uuid": "fd33ab37-d860-4a45-b39e-25f112b63872",
-      "type": "crud",
-      "documentation": "",
-      "method": "",
-      "endpoint": "todos",
-      "responses": [
-        {
-          "uuid": "e04dae5c-e466-4a08-bfc1-aa2c475fa695",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "bodyType": "DATABUCKET",
-          "filePath": "",
-          "databucketID": "o6z0",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true
-        }
-      ],
-      "enabled": true,
-      "responseMode": null
-    },
-    {
       "uuid": "4af95f4e-e467-4c3f-9db9-83b54bfc6b5e",
       "type": "http",
       "documentation": "Serve demo app",
@@ -252,7 +228,7 @@
     {
       "uuid": "c8f2ab55-c841-4404-8498-923a84a5c652",
       "type": "http",
-      "documentation": "Serve demo app",
+      "documentation": "Serve login demo app",
       "method": "get",
       "endpoint": "demos/login",
       "responses": [
@@ -267,6 +243,62 @@
           "filePath": "../demos/login/index.html",
           "databucketID": "",
           "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0ad17fb1-bbf2-4154-a383-b3207f2b5829",
+      "type": "http",
+      "documentation": "Serve todo list demo app",
+      "method": "get",
+      "endpoint": "demos/todolist",
+      "responses": [
+        {
+          "uuid": "7481596d-f411-4686-a996-3ca384c2b50b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "../demos/todolist/index.html",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "25df3d67-3ed8-450a-a646-3109906fe43d",
+      "type": "http",
+      "documentation": "Serve demo app",
+      "method": "get",
+      "endpoint": "demos/todolist/:filePath([a-z][a-z-]*)",
+      "responses": [
+        {
+          "uuid": "7a245f74-8a31-401a-81f6-fab19feff492",
+          "body": "{\n  \"path\": {{urlParam 'filePath'}}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "../demos/todolist/{{urlParam 'filePath'}}",
+          "databucketID": "",
+          "sendFileAsBody": false,
           "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
@@ -297,7 +329,7 @@
     },
     {
       "type": "folder",
-      "uuid": "e3211a70-a570-44a0-bf64-b1093594c944"
+      "uuid": "af7e6b10-c92c-4ea4-af41-c078cf3b3cdd"
     }
   ],
   "proxyMode": false,
@@ -353,7 +385,7 @@
       "id": "cwzv",
       "name": "Slides",
       "documentation": "",
-      "value": "[\n  {\"id\": \"slide-1.md\"},\n  {\"id\": \"slide-2.md\"},\n  {\"id\": \"slide-3.md\"},\n  {\"id\": \"slide-4.md\"},\n  {\"id\": \"slide-5.md\"},\n  {\"id\": \"slide-6.md\"},\n  {\"id\": \"slide-7.md\"},\n  {\"id\": \"slide-8.md\"},\n  {\"id\": \"slide-login-demo.md\"}\n]"
+      "value": "[\n  {\"id\": \"slide-1.md\"},\n  {\"id\": \"slide-2.md\"},\n  {\"id\": \"slide-3.md\"},\n  {\"id\": \"slide-4.md\"},\n  {\"id\": \"slide-5.md\"},\n  {\"id\": \"slide-6.md\"},\n  {\"id\": \"slide-7.md\"},\n  {\"id\": \"slide-8.md\"},\n  {\"id\": \"slide-login-demo.md\"},\n  {\"id\": \"slide-todolist-demo.md\"}\n]"
     }
   ]
 }

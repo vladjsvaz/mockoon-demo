@@ -1,0 +1,98 @@
+{
+  "uuid": "b38c0570-e63a-4581-a149-5cf209063207",
+  "lastMigration": 27,
+  "name": "Todo-app",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 9000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "c0ff9ac0-826e-453a-86fe-d7017a6ffe0b",
+      "type": "crud",
+      "documentation": "",
+      "method": "",
+      "endpoint": "todos",
+      "responses": [
+        {
+          "uuid": "c061a097-4eac-4afc-8cc8-7d07b8179ff6",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "artd",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "c0ff9ac0-826e-453a-86fe-d7017a6ffe0b"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "7ba5f6bf-74f3-4434-871a-b5f80f3bf7ac",
+      "id": "artd",
+      "name": "Todos Bucket",
+      "documentation": "",
+      "value": "[\n  {{#repeat (faker 'datatype.number' min=4 max=10)}}\n  {\n    \"id\": {{@index}},\n    \"description\": \"{{faker 'hacker.phrase'}}\",\n    \"isDone\": {{faker 'datatype.boolean'}},\n    \"dueDate\": \"{{faker 'date.soon'}}\",\n    \"orderId\": 0\n  }\n  {{/repeat}}\n]"
+    }
+  ]
+}
