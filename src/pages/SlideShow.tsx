@@ -1,6 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import { useEffect, useState } from 'react';
 import rehypeRaw from 'rehype-raw';
+import rehypeHighlight from 'rehype-highlight';
 import Pagination from 'react-bootstrap/esm/Pagination';
 import Stack from 'react-bootstrap/esm/Stack';
 
@@ -66,7 +67,7 @@ const SlideShow = () => {
     <Stack gap={3} className="mt-3 mx-auto">
       <Pagination size="sm" data-testid="pagination-controls">{setPaginationControlls(activeItem, totalItems)}</Pagination>
       <div>
-        <ReactMarkdown children={markdownContent} rehypePlugins={[rehypeRaw]} />
+        <ReactMarkdown children={markdownContent} rehypePlugins={[rehypeRaw, rehypeHighlight]} />
       </div>
     </Stack>
 
