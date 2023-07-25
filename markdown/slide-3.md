@@ -1,28 +1,8 @@
-# `Mockoon Tabs`
-
-Mockoon displays six main tabs, to easily access the following options:
-
-* Routes
-* Data
-* Headers
-* Logs
-* Proxy
-* Settings
-
 ## Routes tab
-![Routes tab](http://localhost:3001/image/file-route.png) 
 
-## Data tab
-![Data tab](http://localhost:3001/image/file-route.png)
+In this tab we can define endpoints, responses, headers and the rules to be applied to them. <br>
+The responses view allows edition of the type of responses. <br>
+The response can be a html, text, json, or any file. <br>
+We can use regex expressions and set paths to directoris and files.
 
-## Headers tab
-![Headers tab](http://localhost:3001/image/file-route.png)
-
-## Logs tab
-![Logs tab](http://localhost:3001/image/file-route.png)
-
-## Proxy tab
-![Proxy tab](http://localhost:3001/image/file-route.png) 
-
-## Settings tab
-![Settings tab](http://localhost:3001/image/file-route.png) 
+![Routes tab](http://localhost:3001/image/routes-view.png)

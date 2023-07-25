@@ -1,6 +1,3 @@
-# A demo of `Mockoon`
+## Headers
 
-
-## User interface
-
-![File route](http://localhost:3001/image/file-route.png) 
+![Data tab](http://localhost:3001/image/headers-view.png)

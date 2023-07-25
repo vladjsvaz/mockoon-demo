@@ -1,9 +1,11 @@
 /* Adjust image width to parent size */
 p>img {
   width: 100%;
+  border-radius: 8px;
 }
 
 iframe {
+  border-radius: 8px;
   width: 100%;
   min-height: 100vh;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
