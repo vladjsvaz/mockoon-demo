@@ -5,7 +5,7 @@ const pageUrl = 'http://localhost:4173';
 test('has 5 slides to show', async ({ page }) => {
   await page.goto(pageUrl);
   const paginationControls = await page.getByTestId('pagination-controls').getByRole("listitem").count();
-  expect(paginationControls).toEqual(11);
+  expect(paginationControls).toEqual(12);
 
 });
 
