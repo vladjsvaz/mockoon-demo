@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+# Mockoon demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the code for the Mockoon demo presentation.
 
-Currently, two official plugins are available:
+# How to run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Mockoon UI version
 
-## Expanding the ESLint configuration
+If you want to use the UI version, you need to do this steps first.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Install Mockoon
+- Open Mockoon
+- Click __Open environment__
+- Select `file-test.json` in the `mockoon` folder
+- Click in __Start server__ green icon
+- Click __Open environment__
+- Select `todo-app.json` in the `mockoon` folder
+- Click in __Start server__ green icon
 
-- Configure the top-level `parserOptions` property like this:
+After this, open a new terminal and run 
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```shell
+   $ npm i
+   $ npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Mockoon CLI version
+
+If you want to use the CLI version, you don't need to install Mockoon.
+
+Open a new terminal and install the dependencies:
+
+```shell
+   $ npm i
+```
+
+Then start the mock server from the CLI, using:
+
+```shell
+   $ npm run mock
+```
+
+Open a new terminal and run:
+
+```shell
+   $ npm run dev
+```
+
+Open the page in http://localhost:5173/, and you should see a page like the one in the image below.
+
+![Page view](./first-page-view.png)
