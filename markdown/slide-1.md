@@ -1,4 +1,4 @@
-# A demo of `Mockoon`
+## A demo of `Mockoon`
 
 `Mockoon` is an application to create REST mock API's.
 

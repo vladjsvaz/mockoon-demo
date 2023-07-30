@@ -1,7 +1,7 @@
-# Login demo 
+## Login demo 
 
-This demo shows how we can define `multiple responses` for one route.
-Moockon allows us to define a set of rules, and based on those rules a specific response is returned.
+This demo shows how we can define `multiple responses` for the same endpoint. <br>
+We can define a set of rules in each endpoint, and based on the result, a specific response is returned.
 
 
 <iframe src="http://localhost:3001/demos/login/" title="Login Demo" aria-errormessage="Cannot load page"></iframe>
