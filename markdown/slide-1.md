@@ -1,6 +1,6 @@
 ## A demo of `Mockoon`
 
-`Mockoon` is an application to create REST mock API's.
+`Mockoon` is an application to mock REST API's.
 
 ## Overview
 
