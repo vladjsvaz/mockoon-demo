@@ -385,7 +385,7 @@
       "id": "cwzv",
       "name": "Slides",
       "documentation": "",
-      "value": "[\n  {\"id\": \"slide-1.md\"},\n  {\"id\": \"slide-2.md\"},\n  {\"id\": \"slide-3.md\"},\n  {\"id\": \"slide-4.md\"},\n  {\"id\": \"slide-5.md\"},\n  {\"id\": \"slide-6.md\"},\n  {\"id\": \"slide-7.md\"},\n  {\"id\": \"slide-8.md\"},\n  {\"id\": \"slide-login-demo.md\"},\n  {\"id\": \"slide-todolist-demo.md\"}\n]"
+      "value": "[\n  {\"id\": \"slide-1.md\"},\n  {\"id\": \"slide-2.md\"},\n  {\"id\": \"slide-3.md\"},\n  {\"id\": \"slide-4.md\"},\n  {\"id\": \"slide-5.md\"},\n  {\"id\": \"slide-6.md\"},\n  {\"id\": \"slide-7.md\"},\n  {\"id\": \"slide-8.md\"},\n  {\"id\": \"slide-9.md\"},\n  {\"id\": \"slide-login-demo.md\"},\n  {\"id\": \"slide-todolist-demo.md\"}\n]"
     }
   ]
 }
